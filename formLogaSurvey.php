@@ -22,7 +22,6 @@
 
         <!-- Start Form -->
         <iframe id="iframe" name="iframe" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-        <!-- <iframe id="iframe" name="iframe" src="#" ></iframe> -->
         <form id="form_survey" method="POST">
 
           <!-- Q1. -->
@@ -444,41 +443,7 @@
 
 
   <?php include 'footer.php'; ?>
-  <!-- <script>
-    $("#form_survey").on("submit", function(e) {
-
-      e.preventDefault();
-      $.ajax({
-        url: "checksubmit.php",
-        type: "post",
-        data: $(this).serialize(),
-        success: function(result) {
-          // jQuery("#form_survey input[type=checkbox]").prop("checked", false);
-          console.log("result= " + result);
-          if (result = "1") {
-            Swal({
-              position: 'center',
-              type: 'success',
-              title: 'บันทึกข้อมูลเรียร้อย',
-              showConfirmButton: true,
-            }).then((result) => {
-              if (result.value) {
-                window.location = "thankyou.php";
-              }
-            });
-          }
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-          Swal(
-            'เกิดข้อผิดพลาด!',
-            'ลองอีกครั้ง!',
-            'error'
-          );
-        }
-      });
-
-    });
-  </script> -->
+  
   <script>
     $("#form_survey").on("submit", function(e) {
 
@@ -494,7 +459,7 @@
           console.log("result= " + result);
           if (result == "1") {
             swal({
-              position: 'top-end',
+              position: 'center',
               type: 'success',
               title: 'บันทึกข้อมูลเรียบร้อย',
               showConfirmButton: true,
@@ -503,10 +468,11 @@
                 window.location = "thankyou.php";
               }
             });
+
           } else {
             swal({
-              position: 'top-end',
-              type: 'success',
+              position: 'center',
+              type: 'warning',
               title: 'กรุณาใส่คำตอบให้ครบ',
               showConfirmButton: true,
             });

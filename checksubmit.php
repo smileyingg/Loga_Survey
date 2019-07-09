@@ -70,5 +70,5 @@ if (isset($_POST['q1']) && isset($_POST['q2_province']) && isset($_POST['q2_amph
   $conn->close();
 } else {
   echo ('0');
-  // echo "<script>alert('กรุณาตอบแบบสอบถามให้ครบ');document.location='formLogaSurvey.php'</script>";
+  
 }

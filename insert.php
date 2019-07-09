@@ -18,10 +18,6 @@ for ($i=0; $i<sizeof ($checkbox1);$i++) {
     $sql="INSERT INTO answer(q_id,answer,email) VALUES (1,'".$checkboxl[$i]. "','".$_POST["q11_c1"]."')"; }
 }
 echo "Record is inserted";  
- 
-
-// $sql = "INSERT INTO answer(q_id,answer,email)
-// VALUES (1,'".$_POST["q1_c1"]."','".$_POST["q11_c1"]."')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

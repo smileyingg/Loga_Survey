@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 08, 2019 at 10:36 AM
+-- Generation Time: Jul 09, 2019 at 01:26 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -1181,24 +1181,6 @@ INSERT INTO `questions` (`id`, `question`) VALUES
 (8, 'Q8.ด้านการส่งเสริมการตลาด'),
 (9, 'Q9.ความถี่ของลูกค้ารายเดิมที่มาใช้บริการ'),
 (10, 'Q10.เหตุผลที่ลูกค้ากลับมาใช้บริการที่ร้านของท่านซ้ำ');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `test`
---
-
-DROP TABLE IF EXISTS `test`;
-CREATE TABLE IF NOT EXISTS `test` (
-  `test` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `test`
---
-
-INSERT INTO `test` (`test`) VALUES
-(11);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
